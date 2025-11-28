@@ -18,6 +18,29 @@ body {
     background-color: #ffffff;
 }
 
+/* ===== CENTRALIZED STYLES ===== */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #071629;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #071629;
+    opacity: 0.8;
+}
+
 /* ===== HEADER STYLES ===== */
 .header {
     background-color: #FFFFFF;
@@ -124,6 +147,68 @@ body {
     margin: 0 auto;
 }
 
+/* ===== QUOTES SECTION ===== */
+.quotes-section {
+    padding: 6rem 0;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.quotes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.quote-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quote-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.quote-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    background-color: #FF6565; /* Placeholder color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.quote-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #071629;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.quote-author {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #FF6565;
+    margin-bottom: 0.5rem;
+}
+
+.quote-role {
+    font-size: 0.75rem;
+    color: #071629;
+    opacity: 0.7;
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
     .header-container {
@@ -140,6 +225,19 @@ body {
     
     .hero-subtitle {
         font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .quotes-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
     }
 }
 
@@ -163,5 +261,9 @@ body {
     
     .hero {
         padding: 0 1rem;
+    }
+    
+    .quote-item {
+        padding: 1.5rem;
     }
 }
