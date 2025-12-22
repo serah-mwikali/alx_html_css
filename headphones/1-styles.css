@@ -1,0 +1,126 @@
+/* ===== CSS RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== HEADER STYLES ===== */
+.header {
+    background-color: #071629;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo - Left aligned on regular screens */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 32px;
+    width: auto;
+}
+
+/* Navigation - Right aligned on regular screens */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-item a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #FF6565;
+}
+
+/* Hamburger menu - Hidden on desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* ===== MOBILE STYLES ===== */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+    }
+    
+    /* Logo centered on mobile */
+    .logo {
+        margin-bottom: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    /* Hide regular navigation on mobile */
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    
+    /* Show hamburger on mobile */
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+    
+    /* When hamburger is active, show menu */
+    .nav.active .nav-list {
+        display: flex;
+    }
+    
+    /* Hamburger animation */
+    .nav.active .hamburger .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    
+    .nav.active .hamburger .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav.active .hamburger .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+}
