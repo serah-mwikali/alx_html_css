@@ -1,0 +1,194 @@
+/* ===== HOLBERTON ICON FONT ===== */
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+          url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+          url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+          url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* ===== CSS RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== WHAT WE DO SECTION ===== */
+.what-we-do {
+    padding: 110px 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Section Header - CENTERED */
+.section-header {
+    text-align: center;
+    margin-bottom: 98px;
+}
+
+.section-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #071629;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.section-subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #071629;
+    max-width: 637px;
+    margin: 0 auto;
+}
+
+/* Icons Row - TAKES FULL WIDTH, CENTERED */
+.icons-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Icon Items */
+.icon-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.icon-circle {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-color: #FF6565;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Icon Font Styles */
+.holberton_school-icon-ic_sound,
+.holberton_school-icon-ic_video,
+.holberton_school-icon-ic_music,
+.holberton_school-icon-ic_hearing {
+    font-family: 'holberton_school-icon';
+    font-size: 100px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Item Title (Header tag) */
+.item-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #071629;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+
+/* Item Subtitle */
+.item-subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #071629;
+    max-width: 207px;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Tablet: 2 lines when 480px < screen < 768px */
+@media (max-width: 767px) and (min-width: 481px) {
+    .icons-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .icon-item {
+        flex: 0 0 calc(50% - 30px);
+        margin: 0 15px 60px 15px;
+    }
+    
+    .icon-circle {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    
+    .holberton_school-icon-ic_sound,
+    .holberton_school-icon-ic_video,
+    .holberton_school-icon-ic_music,
+    .holberton_school-icon-ic_hearing {
+        font-size: 70px;
+    }
+}
+
+/* Mobile: Column when screen < 480px */
+@media (max-width: 480px) {
+    .what-we-do {
+        padding: 60px 20px;
+    }
+    
+    .section-header {
+        margin-bottom: 60px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .icons-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .icon-item {
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+    
+    .icon-item:last-child {
+        margin-bottom: 0;
+    }
+    
+    .icon-circle {
+        width: 190px;
+        height: 190px;
+        margin-bottom: 30px;
+    }
+    
+    .holberton_school-icon-ic_sound,
+    .holberton_school-icon-ic_video,
+    .holberton_school-icon-ic_music,
+    .holberton_school-icon-ic_hearing {
+        font-size: 100px;
+    }
+}
