@@ -1,0 +1,410 @@
+/* ===== CSS RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== OUR RESULTS SECTION ===== */
+.our-results {
+    padding: 110px 20px;
+    background: 
+        linear-gradient(rgba(255, 101, 101, 0.9), rgba(255, 101, 101, 0.9)),
+        url('images/headphones_hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Section Header - CENTERED */
+.section-header {
+    text-align: center;
+    margin-bottom: 98px;
+}
+
+.section-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.section-subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    max-width: 637px;
+    margin: 0 auto;
+}
+
+/* Results Row - TAKES FULL WIDTH, CENTERED */
+.results-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Result Items */
+.result-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* Pentagon Background Image */
+.pentagon-bg {
+    width: 190px;
+    height: 190px;
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+        url('images/pentagone.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Big Number */
+.result-number {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+/* Description Text */
+.result-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 26px;
+    max-width: 207px;
+}
+
+/* ===== CONTACT US SECTION ===== */
+.contact-us {
+    padding: 110px 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+/* Form Container - MAX 400px, CENTERED */
+.contact-form {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form Section Title */
+.contact-us .section-header {
+    margin-bottom: 40px;
+}
+
+.contact-us .section-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #071629;
+    line-height: 40px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* Form Groups */
+.form-group {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Form Fields - RIGHT LAYOUT */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #071629;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: #071629;
+    background-color: transparent;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #071629;
+    opacity: 0.5;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-bottom-color: #FF6565;
+}
+
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+    border-bottom-color: #FF6565;
+}
+
+/* Textarea specific */
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Submit Button - SAME AS HEADER BUTTON */
+.submit-button {
+    background-color: #FF6565;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 22px;
+    padding: 13px 31px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-top: 20px;
+    width: auto;
+}
+
+.submit-button:hover {
+    opacity: 0.9;
+}
+
+/* ===== FOOTER SECTION ===== */
+.footer {
+    background-color: #071629;
+    padding: 60px 20px 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 120px;
+}
+
+/* Logo - LEFT on desktop */
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 32px;
+    width: auto;
+}
+
+/* Social Links - RIGHT on desktop */
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Social items are LINKS */
+.social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #071629;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #FF6565;
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+.social-link i {
+    font-size: 18px;
+}
+
+/* Copyright - CENTERED AT BOTTOM */
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.copyright p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Tablet: 2 lines when 480px < screen < 768px */
+@media (max-width: 767px) and (min-width: 481px) {
+    .results-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .result-item {
+        flex: 0 0 calc(50% - 30px);
+        margin: 0 15px 60px 15px;
+    }
+    
+    .pentagon-bg {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .result-number {
+        font-size: 36px;
+    }
+}
+
+/* Mobile: Column when screen < 480px */
+@media (max-width: 480px) {
+    /* Results Section */
+    .results-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .result-item {
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+    
+    .result-item:last-child {
+        margin-bottom: 0;
+    }
+    
+    .pentagon-bg {
+        width: 190px;
+        height: 190px;
+    }
+    
+    .result-number {
+        font-size: 46px;
+    }
+}
+
+/* Mobile adjustments for all sections */
+@media (max-width: 767px) {
+    .our-results {
+        padding: 60px 20px;
+    }
+    
+    .contact-us {
+        padding: 60px 20px;
+    }
+    
+    .section-header {
+        margin-bottom: 60px;
+    }
+    
+    .our-results .section-title {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-us .section-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .contact-form {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    .form-group {
+        margin-bottom: 25px;
+    }
+    
+    .submit-button {
+        padding: 12px 25px;
+        font-size: 12px;
+    }
+    
+    /* Footer Mobile */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    /* Logo CENTERED on mobile */
+    .footer-logo {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    /* Social links under logo on mobile */
+    .social-links {
+        justify-content: center;
+        width: 100%;
+        order: 2;
+    }
+    
+    .footer-logo {
+        order: 1;
+    }
+    
+    .copyright {
+        order: 3;
+        position: relative;
+        margin-top: 30px;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px;
+        font-size: 12px;
+    }
+}
